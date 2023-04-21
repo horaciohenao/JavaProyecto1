@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class main1 {
 
 	public static void main(String [] args) {
+
+		Scanner scanner = new Scanner(System.in);
 		
 		// Declarar Arrays
 		byte[] bytes = new byte[5];
@@ -60,11 +64,50 @@ public class main1 {
 		objetos[4] = true;
 
 		String[] strings = new String[5];
-		strings[0] = "Odio";
-		strings[1] = "mucho";
+		strings[0] = "Hola";
+		strings[1] = "mundo";
 		strings[2] = "Java";
-		strings[3] = "Peor";
+		strings[3] = "programacion";
 		strings[4] = "lenguaje";
+
+		// Imprimir valores
+		System.out.println("\n= Valores de los arrays =\n");
+		System.out.println("\n= Bytes =\n");
+		for ( int i = 0; i < bytes.length; i++) {
+			System.out.println("Valor en el espacio " + i + ": " + bytes[i]);
+		}
+		System.out.println("\n= Characters =\n");
+		for ( int i = 0; i < characters.length; i++) {
+			System.out.println("Valor en el espacio " + i + ": " + characters[i]);
+		}
+		System.out.println("\n= Shorts =\n");
+		for ( int i = 0; i < shorts.length; i++) {
+			System.out.println("Valor en el espacio " + i + ": " + shorts[i]);
+		}
+		System.out.println("\n= Integers =\n");
+		for ( int i = 0; i < integers.length; i++) {
+			System.out.println("Valor en el espacio " + i + ": " + integers[i]);
+		}
+		System.out.println("\n= Longs =\n");
+		for ( int i = 0; i < longs.length; i++) {
+			System.out.println("Valor en el espacio " + i + ": " + longs[i]);
+		}
+		System.out.println("\n= Floats =\n");
+		for ( int i = 0; i < floats.length; i++) {
+			System.out.println("Valor en el espacio " + i + ": " + floats[i]);
+		}
+		System.out.println("\n= Doubles =\n");
+		for ( int i = 0; i < doubles.length; i++) {
+			System.out.println("Valor en el espacio " + i + ": " + doubles[i]);
+		}
+		System.out.println("\n= Objetos =\n");
+		for ( int i = 0; i < objetos.length; i++) {
+			System.out.println("Valor en el espacio " + i + ": " + objetos[i]);
+		}
+		System.out.println("\n= Strings =\n");
+		for ( int i = 0; i < strings.length; i++) {
+			System.out.println("Valor en el espacio " + i + ": " + strings[i]);
+		}
 
 	}
 
