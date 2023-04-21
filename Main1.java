@@ -109,7 +109,36 @@ public class main1 {
 			System.out.println("Valor en el espacio " + i + ": " + strings[i]);
 		}
 
+		String[] dataStructs = {"Listas", "Colas", "Pilas", "Mapas", "Conjuntos"};
+
+		String[] caracteristicas = new String[5];
+
+		System.out.print("\nIngrese los datos necesarios\n");
+		
+		for ( int i = 0; i < caracteristicas.length; i++) {
+			System.out.print("Dato #" + i +":");
+			caracteristicas[i] = scanner.nextLine();
+		}
+
+		//Manipular los elementos dentro de los arreglos
+		for ( int i = 0; i < caracteristicas.length; i++ ) {
+			System.out.println("\ndataStructs posicion en la memoria #" + i + ": " + dataStructs[i] + "\ncaracteristicas posicion en la memoria #" + i + ": " + caracteristicas[i]);
+		}
+
+		scanner.close();
+
 	}
 
 }
 
+/*
+Fuentes 
+http://www.java2s.com/Tutorial/Java/0125__Reflection/Getthenameofanarray.htm
+https://www.geeksforgeeks.org/how-to-concatenate-two-integer-values-into-one/
+https://www.tutorialspoint.com/java/util/scanner_close.htm
+https://www.w3schools.com/java/java_data_types.asp
+https://www.w3schools.com/js/js_objects.asp
+https://www.softwaretestinghelp.com/array-of-objects-in-java/
+http://www.sc.ehu.es/sbweb/fisica/cursoJava/fundamentos/clases1/arays.htm
+https://stackoverflow.com/questions/51422626/declare-multiple-objects-in-one-line-in-java
+*/
