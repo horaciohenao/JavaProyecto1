@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class main2 {
 
@@ -119,12 +120,33 @@ public class main2 {
             for ( int i = 0; i < array.length; i++ ) {
                 cacheArray[i] = array[i];
             }
-            for ( int i = 0; i < array.length*3; i++ ) {
+            for ( int i = 0; i < array.length*10; i++ ) {
                 cache2 = rdNum(0, array.length - 1);
                 while ( cacheArray[cache2] != -1 ) {
                     System.out.println(cacheArray[cache2]);
                     cacheArray[cache2] = -1;
                 }
+            }
+            
+        } else if ( cond == 'i' ) { // separar pares e impares
+            ArrayList<Integer> cacheList = new ArrayList<>();
+            ArrayList<Integer> cacheList1 = new ArrayList<>();
+            for ( int i = 0; i < array.length; i++ ) {
+                cache = array[i];
+                if (cache % 2 == 0) {
+                    cacheList.add(array[i]);
+                } else {
+                    cacheList1.add(array[i]);
+                }
+            }
+            // Imprimimos los valores de los ArrayList
+            System.out.println("\n= Valores pares =\n");
+            for (int i = 0; i < cacheList.size(); i++) {
+                System.out.println(cacheList.get(i));
+            }
+            System.out.println("\n= Valores impares =\n");
+            for (int i = 0; i < cacheList1.size(); i++) {
+                System.out.println(cacheList1.get(i));
             }
         }
         return vnt;
@@ -140,7 +162,8 @@ public class main2 {
 
     }
 
-    public static void pressEnterToContinue() { // https://stackoverflow.com/questions/19870467/how-do-i-get-press-any-key-to-continue-to-work-in-my-java-code
+    public static void pressEnterToContinue() { 
+        // https://stackoverflow.com/questions/19870467/how-do-i-get-press-any-key-to-continue-to-work-in-my-java-code
         System.out.println("Press Enter key to continue...");
         try {
             System.in.read();
@@ -166,7 +189,7 @@ public class main2 {
 
         while ( true ) {
             System.out.println("Que desea consultar?\n");
-            System.out.println("| - / menor venta | + mayor venta | t total de ventas | p promedio | c venta cercana al promedio | h ordenar de mayor a menor | l ordenar de menor a mayor | r imprimir en desorden \n");
+            System.out.println(" - / menor venta | + mayor venta | t total de ventas | p promedio | c venta cercana al promedio | h ordenar de mayor a menor | l ordenar de menor a mayor | r imprimir en desorden | i separar valores pares e impares \n");
 			ans = scanner.next().charAt(0);
             System.out.println("\nEste es el resultado: " + arrayCon(ventas, ans) + "\n");
             pressEnterToContinue();
@@ -181,6 +204,7 @@ public class main2 {
 
 /*
 fuentes
+https://www.quora.com/How-can-we-create-array-without-specifying-a-size-in-java
 https://www.w3schools.com/java/java_methods.asp
 https://www.tutorialspoint.com/How-to-pass-Arrays-to-Methods-in-Java
 https://prutor.ai/scanner-and-nextchar-in-java/
