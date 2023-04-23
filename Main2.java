@@ -200,11 +200,3 @@ public class main2 {
     }
     
 }
-
-/*
-fuentes
-https://www.quora.com/How-can-we-create-array-without-specifying-a-size-in-java
-https://www.w3schools.com/java/java_methods.asp
-https://www.tutorialspoint.com/How-to-pass-Arrays-to-Methods-in-Java
-https://prutor.ai/scanner-and-nextchar-in-java/
-*/
