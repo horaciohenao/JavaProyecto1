@@ -130,15 +130,3 @@ public class main1 {
 	}
 
 }
-
-/*
-Fuentes 
-http://www.java2s.com/Tutorial/Java/0125__Reflection/Getthenameofanarray.htm
-https://www.geeksforgeeks.org/how-to-concatenate-two-integer-values-into-one/
-https://www.tutorialspoint.com/java/util/scanner_close.htm
-https://www.w3schools.com/java/java_data_types.asp
-https://www.w3schools.com/js/js_objects.asp
-https://www.softwaretestinghelp.com/array-of-objects-in-java/
-http://www.sc.ehu.es/sbweb/fisica/cursoJava/fundamentos/clases1/arays.htm
-https://stackoverflow.com/questions/51422626/declare-multiple-objects-in-one-line-in-java
-*/
