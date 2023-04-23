@@ -139,7 +139,6 @@ public class main2 {
                     cacheList1.add(array[i]);
                 }
             }
-            // Imprimimos los valores de los ArrayList
             System.out.println("\n= Valores pares =\n");
             for (int i = 0; i < cacheList.size(); i++) {
                 System.out.println(cacheList.get(i));
